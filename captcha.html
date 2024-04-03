@@ -112,9 +112,9 @@ margin: 20px;
     verifyButton.innerText = 'Verifying...';
     setTimeout(() => {
       if (checkIdentical()) {
-        para.innerText = 'You are a human. Congratulations!';
+        alert('You are a human. Congratulations!');
       } else {
-        para.innerText = 'We cannot verify you as a human. You selected the non-identical tiles.';
+        alert('We cannot verify you as a human. You selected the non-identical tiles.');
       }
       verifyButton.style.display = 'none';
       para.style.display = 'block';
